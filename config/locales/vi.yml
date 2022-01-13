@@ -1,0 +1,29 @@
+vi:
+  rails_tut: "Hướng dẫn về Ruby on Rails"
+  rails_tut_book: "Sách về Ruby on Rails"
+  rails_help_page: "Trang hướng dẫn về Rails"
+  rails_tut_contact: "Trang liên hệ"
+  learn_enough: Learn Enough;
+  series: "loạt video"
+  rails: "Ruby on Rails"
+  and: "và"
+  layout_title: "Ứng dụng đơn giản hướng dẫn về Ruby on Rails"
+  static_pages:
+    home:
+      title: "Trang Chủ"
+      content: "Đây là trang chủ cho ứng dụng"
+    help:
+      title: "Trợ Giúp"
+      content: "Nhận trợ giúp hướng dẫn về  Ruby on Rails tại"
+      rails_help_page: "trang hướng dẫn về Rails"
+      content_to_help: "Để nhận trợ giúp về ứng dụng, xem tại"
+      rails_tut_book: "Sách hướng dẫn về Ruby on Rails"
+    about:
+      title: "Về chúng tôi"
+      part_of: " một phần của"
+      family: "gia đình về các hướng dẫn, là một"
+      to_teach: "để dạy các web dev với"
+      sample_app: "Đây là ứng dụng ví dụ về  bài hướng dẫn này."
+    contact:
+      title: "Liên hệ"
+      content: "Liên hệ về hướng dẫn Ruby on Rails tại"
