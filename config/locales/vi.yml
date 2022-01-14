@@ -15,9 +15,7 @@ vi:
     help:
       title: "Trợ Giúp"
       content: "Nhận trợ giúp hướng dẫn về  Ruby on Rails tại"
-      rails_help_page: "trang hướng dẫn về Rails"
       content_to_help: "Để nhận trợ giúp về ứng dụng, xem tại"
-      rails_tut_book: "Sách hướng dẫn về Ruby on Rails"
     about:
       title: "Về chúng tôi"
       part_of: " một phần của"
@@ -27,3 +25,16 @@ vi:
     contact:
       title: "Liên hệ"
       content: "Liên hệ về hướng dẫn Ruby on Rails tại"
+  sample_app: "Ứng dụng mẫu"
+  home: "Trang chủ"
+  help: "Trợ giúp"
+  about: "Về chúng tôi"
+  contact: "Liên hệ"
+  log_in: "Đăng nhập"
+  welcome: "Chào mừng đến với Sample App"
+  sign_up: "Đăng Kí"
+  news: "Tin tức"
+  english: "Tiếng Anh"
+  vietnamese: "TIếng Việt"
+  by: "bởi"
+  the: " "
