@@ -7,3 +7,7 @@ rails_url: "https://rubyonrails.org/"
 rails_contact_url: "https://www.railstutorial.org/contact"
 michael_hartl: "https://www.michaelhartl.com/"
 rails_news: "https://news.railstutorial.org/"
+name_length: 50
+email_length: 255
+pass_min_length: 6
+email_regexp: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
