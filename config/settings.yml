@@ -10,4 +10,5 @@ rails_news: "https://news.railstutorial.org/"
 name_length: 50
 email_length: 255
 pass_min_length: 6
+avatar_size: 80
 email_regexp: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

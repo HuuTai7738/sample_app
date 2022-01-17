@@ -38,3 +38,17 @@ en:
   vietnamese: "Vietnamese"
   by: "by"
   the: "the"
+  create_accout: "Create my account"
+  form_contain: "The form contains"
+  error: "error"
+  create_fail: "Failed!"
+  user_not_found: "User not found!"
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Username"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
