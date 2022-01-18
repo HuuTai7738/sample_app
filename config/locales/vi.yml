@@ -38,3 +38,17 @@ vi:
   vietnamese: "TIếng Việt"
   by: "bởi"
   the: " "
+  create_accout: "Tạo mới tài khoản"
+  form_contain: "Form thông báo "
+  error: "lỗi"
+  create_fail: "Thêm không thành công!"
+  user_not_found: "Không tìm thấy người dùng!"
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên đăng nhập"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
