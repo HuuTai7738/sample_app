@@ -43,6 +43,13 @@ vi:
   error: "lỗi"
   create_fail: "Thêm không thành công!"
   user_not_found: "Không tìm thấy người dùng!"
+  sign_up_now: "Đăng kí ngay!"
+  new_user: "Người dùng mới?"
+  fail_login: "Email/mật khẩu không hợp lệ!"
+  user: "Người dùng"
+  profile: "Thông tin"
+  setting: "Thiết lập"
+  log_out: "Đăng xuất"
   activerecord:
     models:
       user: "Người dùng"

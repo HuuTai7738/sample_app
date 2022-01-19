@@ -13,6 +13,8 @@ gem "importmap-rails"
 
 gem "jbuilder"
 
+gem "jquery-rails"
+
 gem "mysql2", "~> 0.5.3"
 
 gem "puma", "~> 5.0"
@@ -26,6 +28,8 @@ gem "sprockets-rails"
 gem "stimulus-rails"
 
 gem "turbo-rails"
+
+gem "turbolinks"
 
 gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 

@@ -43,6 +43,13 @@ en:
   error: "error"
   create_fail: "Failed!"
   user_not_found: "User not found!"
+  sign_up_now: "Sign up now!"
+  new_user: "New user?"
+  fail_login: "Invalid email/password combination"
+  user: "User"
+  profile: "Profile"
+  setting: "Setting"
+  log_out: "Log out"
   activerecord:
     models:
       user: "User"
