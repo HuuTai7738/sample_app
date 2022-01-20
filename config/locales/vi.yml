@@ -50,6 +50,7 @@ vi:
   profile: "Thông tin"
   setting: "Thiết lập"
   log_out: "Đăng xuất"
+  remember: "Lưu lại tài khoản trên máy tính"
   activerecord:
     models:
       user: "Người dùng"
