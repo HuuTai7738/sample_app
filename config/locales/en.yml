@@ -50,6 +50,7 @@ en:
   profile: "Profile"
   setting: "Setting"
   log_out: "Log out"
+  remember: "Remember me in this computer"
   activerecord:
     models:
       user: "User"
