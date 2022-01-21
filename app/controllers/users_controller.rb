@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
+  before_action :logged_in_user, only: %i(index edit)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: :destroy
+  before_action :load_user, only: %i(show edit update)
 
-    flash[:danger] = t "user_not_found"
-    redirect_to root_path
+  def index
+    @pagy, @user = pagy User.all.order_by_name, item: Settings.users_per_page
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -23,9 +26,55 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update user_params
+      flash[:success] = t "profile_updated"
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if User.find_by(id: params[:id]).destroy
+      flash[:success] = t "user_deleted"
+    else
+      flash[:danger] = t "user_deleted_fail"
+    end
+    redirect_to users_url
+  end
   private
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "please_login"
+    redirect_to login_url
+  end
+
+  def correct_user
+    redirect_to root_url unless current_user? @user
+  end
+
+  def admin_user
+    return if current_user.admin?
+
+    flash[:danger] = t "just_admin"
+    redirect_to root_url
+  end
+
+  def load_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t "user_not_found"
+    redirect_to root_path
   end
 end

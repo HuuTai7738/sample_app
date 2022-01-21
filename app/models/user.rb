@@ -11,8 +11,10 @@ class User < ApplicationRecord
   has_secure_password
 
   validates :password, presence: true,
-                       length: {minimum: Settings.pass_min_length}
+                       length: {minimum: Settings.pass_min_length},
+                       allow_nil: true
 
+  scope :order_by_name, ->{order(name: :asc)}
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
