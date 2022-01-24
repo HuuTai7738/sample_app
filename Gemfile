@@ -9,6 +9,8 @@ gem "bootstrap-sass", "3.4.1"
 
 gem "config"
 
+gem "faker", "2.1.2"
+
 gem "importmap-rails"
 
 gem "jbuilder"
@@ -16,6 +18,8 @@ gem "jbuilder"
 gem "jquery-rails"
 
 gem "mysql2", "~> 0.5.3"
+
+gem "pagy"
 
 gem "puma", "~> 5.0"
 
