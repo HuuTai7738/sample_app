@@ -11,6 +11,8 @@ gem "config"
 
 gem "faker", "2.1.2"
 
+gem "figaro"
+
 gem "importmap-rails"
 
 gem "jbuilder"

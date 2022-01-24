@@ -62,6 +62,14 @@ en:
   delete: "Delete"
   user_deleted_fail: "Delete user fail"
   just_admin: "Just admin can du that!"
+  accout_active: "Account activation"
+  hi: "Hi"
+  follow_link: "Click on the link below to activate your account:"
+  activate: "Activate"
+  check_email: "Please check your email to activate your account."
+  activated: "Account activated!"
+  invalid_active: "Invalid activation link"
+  message_warning_active: "Account not activated. Check your email for the activation link."
   activerecord:
     models:
       user: "User"
