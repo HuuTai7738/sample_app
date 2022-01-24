@@ -1,0 +1,6 @@
+HOST: "localhost:3000"
+MAIL_PORT: "587"
+MAIL_ADDRESS: "smtp.gmail.com"
+HOST_MAIL: "huutai7738@gmail.com"
+MAIL_USER_NAME: "huutai7738@gmail.com"
+MAIL_USER_PASSWORD: "xxxxxxxxxxxxxxxx"
