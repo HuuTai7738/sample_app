@@ -96,6 +96,12 @@ vi:
   view_profile: "xem trang cá nhân"
   microposts: "Bài viết"
   micropost_invalid: "Bài viết không hợp lệ"
+  following: "Đang theo dõi"
+  followers: "Người theo dõi"
+  unfollow: "Bỏ theo dõi"
+  follow: "Theo dõi"
+  follow_failded: "Người dùng không tồn tại, theo dõi thất bại"
+  user_not_followed: "Bạn chưa follow người dùng này"
   alert: "Kích thước tối đa là 5MB, xin hãy chọn file khác"
   activerecord:
     models:

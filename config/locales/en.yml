@@ -94,6 +94,12 @@ en:
   view_profile: "view my profile"
   microposts: "Microposts"
   micropost_invalid: "Micropost invalid"
+  following: "Following"
+  followers: "Follower(s)"
+  unfollow: "Unfollow"
+  follow: "Follow"
+  follow_failded: "This user is not exist, can't follow"
+  user_not_followed: "This user was not followed"
   alert: "Maximum file size is 5MB. Please choose a smaller file."
   activerecord:
     models:

@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit)
+  before_action :logged_in_user, except: %i(new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
-  before_action :load_user, only: %i(show edit update)
+  before_action :load_user, except: %i(index new create destroy)
 
   def index
     @pagy, @user = pagy User.all.order_by_name, item: Settings.users_per_page
@@ -47,6 +47,19 @@ class UsersController < ApplicationController
     end
     redirect_to users_url
   end
+
+  def following
+    @title = t "following"
+    @pagy, @users = pagy @user.following, items: Settings.users_per_page
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    @pagy, @users = pagy @user.followers, items: Settings.users_per_page
+    render "show_follow"
+  end
+
   private
   def user_params
     params.require(:user).permit(:name, :email, :password,
