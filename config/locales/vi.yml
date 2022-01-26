@@ -12,6 +12,7 @@ vi:
     home:
       title: "Trang Chủ"
       content: "Đây là trang chủ cho ứng dụng"
+      micropost_feed: "Dòng trạng thái"
     help:
       title: "Trợ Giúp"
       content: "Nhận trợ giúp hướng dẫn về  Ruby on Rails tại"
@@ -83,12 +84,35 @@ vi:
   reset_expired: "Hết hạn đặt lại mật khẩu"
   reset_password: "Lấy lại mật khẩu"
   user_not_valid: "Tài khoản người dùng không hợp lệ hoặc chưa kích hoạt"
+  posted: "Đăng"
+  ago: "trước"
+  post_created: "Đã tạo bài đăng!"
+  post_deleted: "Đã xóa bài đăng"
+  post_deleted_fail: "Xóa thất bại"
+  msg_invalid_image: "Phải đúng định dạng"
+  msg_invalid_size: "file phải có dung lượng ít hơn 5MB"
+  post: "Đăng"
+  compose: "Tạo bài viết mới"
+  view_profile: "xem trang cá nhân"
+  microposts: "Bài viết"
+  micropost_invalid: "Bài viết không hợp lệ"
+  alert: "Kích thước tối đa là 5MB, xin hãy chọn file khác"
   activerecord:
     models:
       user: "Người dùng"
+      micropost: "Bài viết"
     attributes:
       user:
         name: "Tên đăng nhập"
         email: "Email"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+      micropost:
+        content: "Nội dung"
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              msg_invalid_image: "Phải đúng định dạng"
+              msg_invalid_size: "file phải có dung lượng ít hơn 5MB"

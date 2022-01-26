@@ -12,6 +12,7 @@ en:
     home:
       title: "home"
       content: "This is the home page for the"
+      micropost_feed: "Micropost Feed"
     help:
       title: "help"
       content: "Get help on the Ruby on Rails Tutorial at the"
@@ -83,12 +84,33 @@ en:
   reset_expired: "Password reset has expired."
   reset_password: "Reset password"
   user_not_valid: "User is not valid or be activated"
+  posted: "Posted"
+  ago: "ago"
+  post_created: "Micropost created!"
+  post_deleted: "Micropost deleted!"
+  post_deleted_fail: "Deleted fail!"
+  post: "post"
+  compose: "Compose new micropost..."
+  view_profile: "view my profile"
+  microposts: "Microposts"
+  micropost_invalid: "Micropost invalid"
+  alert: "Maximum file size is 5MB. Please choose a smaller file."
   activerecord:
     models:
       user: "User"
+      micropost: "Micropost"
     attributes:
       user:
         name: "Username"
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+      micropost:
+        content: "Content"
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              msg_invalid_image: "must be a valid image format"
+              msg_invalid_size: "should be less than 5MB"

@@ -13,4 +13,11 @@ pass_min_length: 6
 avatar_size: 80
 users_per_page: 20
 time_reset_expire: 2
+content_max_length: 140
+microposts_per_page: 20
+avatar_post_size: 50
+image_size: 500
+image_types: ["image/jpeg", "image/gif", "image/png"]
+image_type: "image/jpeg, image/gif, image/png"
+max_image_size: 5
 email_regexp: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
