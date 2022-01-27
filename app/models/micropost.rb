@@ -1,7 +1,8 @@
 class Micropost < ApplicationRecord
   belongs_to :user
-  scope :newest, ->{order(created_at: :desc)}
   has_one_attached :image
+  scope :newest, ->{order(created_at: :desc)}
+  scope :all_post, ->(user){where user_id: user.following_ids << user.id}
   validates :user_id, presence: true
   validates :content, presence: true,
                       length: {maximum: Settings.content_max_length}
